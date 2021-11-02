@@ -13,6 +13,11 @@
 		726DA7C22730487700D60F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726DA7C02730487700D60F7E /* Main.storyboard */; };
 		726DA7C42730487900D60F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726DA7C32730487900D60F7E /* Assets.xcassets */; };
 		726DA7C72730487900D60F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726DA7C52730487900D60F7E /* LaunchScreen.storyboard */; };
+		726DA8272730E9A900D60F7E /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DA8262730E9A900D60F7E /* DB.swift */; };
+		726DA8292730EA3400D60F7E /* EmptyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DA8282730EA3400D60F7E /* EmptyProfileViewController.swift */; };
+		726DA82B2730EC0400D60F7E /* PairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DA82A2730EC0400D60F7E /* PairsViewController.swift */; };
+		726DA82D2730FD2100D60F7E /* db.db in Resources */ = {isa = PBXBuildFile; fileRef = 726DA82C2730FD2100D60F7E /* db.db */; };
+		726DA82F2730FD5C00D60F7E /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DA82E2730FD5C00D60F7E /* TopicsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		726DA7C32730487900D60F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726DA7C62730487900D60F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726DA7C82730487900D60F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726DA8262730E9A900D60F7E /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		726DA8282730EA3400D60F7E /* EmptyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProfileViewController.swift; sourceTree = "<group>"; };
+		726DA82A2730EC0400D60F7E /* PairsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewController.swift; sourceTree = "<group>"; };
+		726DA82C2730FD2100D60F7E /* db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.db; sourceTree = "<group>"; };
+		726DA82E2730FD5C00D60F7E /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				726DA7C32730487900D60F7E /* Assets.xcassets */,
 				726DA7C52730487900D60F7E /* LaunchScreen.storyboard */,
 				726DA7C82730487900D60F7E /* Info.plist */,
+				726DA82C2730FD2100D60F7E /* db.db */,
+				726DA8262730E9A900D60F7E /* DB.swift */,
+				726DA8282730EA3400D60F7E /* EmptyProfileViewController.swift */,
+				726DA82A2730EC0400D60F7E /* PairsViewController.swift */,
+				726DA82E2730FD5C00D60F7E /* TopicsViewController.swift */,
 			);
 			path = Sqlite;
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				726DA7C72730487900D60F7E /* LaunchScreen.storyboard in Resources */,
+				726DA82D2730FD2100D60F7E /* db.db in Resources */,
 				726DA7C42730487900D60F7E /* Assets.xcassets in Resources */,
 				726DA7C22730487700D60F7E /* Main.storyboard in Resources */,
 			);
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726DA82F2730FD5C00D60F7E /* TopicsViewController.swift in Sources */,
+				726DA8292730EA3400D60F7E /* EmptyProfileViewController.swift in Sources */,
 				726DA7BF2730487700D60F7E /* ViewController.swift in Sources */,
+				726DA8272730E9A900D60F7E /* DB.swift in Sources */,
 				726DA7BB2730487700D60F7E /* AppDelegate.swift in Sources */,
+				726DA82B2730EC0400D60F7E /* PairsViewController.swift in Sources */,
 				726DA7BD2730487700D60F7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

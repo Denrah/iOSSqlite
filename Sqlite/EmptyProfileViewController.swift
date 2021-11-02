@@ -6,13 +6,26 @@
 //
 
 import UIKit
+import SQLite3
 
 class EmptyProfileViewController: UIViewController {
-
+  @IBOutlet weak var textView: UITextView!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      var query: OpaquePointer?
+      let queryString = "SELECT users.email from users INNER JOIN profile on users.id = profile.user_id WHERE profile.user_name IS NULL or profile.avatar is NULL or profile.about_myself is NULL"
+      
+      if sqlite3_prepare_v2(DB.shared.db, queryString, -1, &query, nil) == SQLITE_OK {
+        while sqlite3_step(query) == SQLITE_ROW {
+          if let userNamePointer = sqlite3_column_text(query, 0) {
+            let userName = String(cString: userNamePointer)
+            
+            textView.text += "\(userName)\n"
+          }
+        }
+      }
     }
     
 
